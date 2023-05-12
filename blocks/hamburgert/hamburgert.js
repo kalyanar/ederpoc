@@ -22,12 +22,13 @@ export default async function decorate(block) {
   if (resp.ok) {
     const html = await resp.text();
 		const htmldecoded=decodeHtml(html)
+	console.log(htmldecoded);
 	  // div.innerHTML = htmldecoded.replace(/<br>/g,'').replace(/<p>/g,'').trim();
       var txt = document.createElement("textarea");
       txt.innerHTML = decodeHtmlEntity(htmldecoded.replace(/<br>/g,'').replace(/<p>/g,'').trim());
 	  var divv=document.createElement("div")
 	  divv.innerHTML=decodeHtmlEntity(txt.value).replace(/&lt;/g,'<').replace(/&gt;/g,'>');
-	  console.log(decodeHtmlEntity(txt.value).replace(/&lt;/g,'<').replace(/&gt;/g,'>'));
+	 // console.log(decodeHtmlEntity(txt.value).replace(/&lt;/g,'<').replace(/&gt;/g,'>'));
   block.append(divv);
 //  block.append(txt)
 }
