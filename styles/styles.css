@@ -243,14 +243,78 @@ main .section.highlight {
 }
 
 
-@keyframes card-content-slide-up {
-  from {
-    transform: translate(0, -100%);
-  }
-  to {
-    transform: translate(0, 0);
-  }
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
+picture {
+  width: 100%;
+  height: auto;
+}
 
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-background {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-logo {
+  width: 128px;
+  height: 39px;
+}
+
+.card-entry {
+  flex: 1;
+}
+
+.card-entry:first-of-type {
+  margin-top: 0;
+}
+
+.card-entry:last-of-type {
+  margin-bottom: 0;
+}
+
+.urls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.more-info {
+  color: #383533;
+  text-decoration: underline;
+}
+
+.website {
+  color: #de010a;
+}
 
