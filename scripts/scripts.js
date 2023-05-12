@@ -134,13 +134,13 @@ async function loadPage() {
     document.querySelector('.card-content').style.display = 'none';
   });
   document.querySelectorAll('.two-items').forEach(function(card) {
-    card.addEventListener('mouseover', function() {
-      this.querySelector('.card-content').style.display = 'block';
-      this.querySelector('.card-content').style.animation = 'card-content-slide-up 0.5s ease-in-out forwards';
-    });
-    card.addEventListener('mouseout', function() {
-      this.querySelector('.card-content').style.display = 'none';
-    });
+    // card.addEventListener('mouseover', function() {
+   //    this.querySelector('.card-content').style.display = 'block';
+   //    this.querySelector('.card-content').style.animation = 'card-content-slide-up 0.5s ease-in-out forwards';
+   //  });
+   //  card.addEventListener('mouseout', function() {
+   //    this.querySelector('.card-content').style.display = 'none';
+   //  });
   });
 }
 
