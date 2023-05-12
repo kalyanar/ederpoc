@@ -17,10 +17,9 @@ const isDesktop = window.matchMedia('(min-width: 900px)');
 export default async function decorate(block) {
   // fetch nav content
   const navMeta = getMetadata('nav');
-  const navPath = navMeta ? new URL(navMeta).pathname : '/topnav';
+  const navPath = navMeta ? new URL(navMeta).pathname : '/try';
   const resp = await fetch(`${navPath}.plain.html`);
   if (resp.ok) {
-	  console.log("eeeee");
     const html = await resp.text();
 		const htmldecoded=decodeHtml(html)
 	  // div.innerHTML = htmldecoded.replace(/<br>/g,'').replace(/<p>/g,'').trim();
