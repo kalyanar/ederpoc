@@ -242,7 +242,6 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
-
 h3 {
   font-size: 24px;
   font-weight: bold;
@@ -269,52 +268,52 @@ a:hover {
   text-decoration: underline;
 }
 
-.card-title {
+#landtechnik {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.card-background {
+div.card-background {
   background-color: #fff;
   border-radius: 5px;
   padding: 20px;
 }
 
-.card-content {
+div.card-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.card-logo {
+div.card-logo {
   width: 128px;
   height: 39px;
 }
 
-.card-entry {
+div.card-entry {
   flex: 1;
 }
 
-.card-entry:first-of-type {
+div.card-entry:first-of-type {
   margin-top: 0;
 }
 
-.card-entry:last-of-type {
+div.card-entry:last-of-type {
   margin-bottom: 0;
 }
 
-.urls {
+div.urls {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.more-info {
+a.more-info {
   color: #383533;
   text-decoration: underline;
 }
 
-.website {
+a.website {
   color: #de010a;
 }
 
