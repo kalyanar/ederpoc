@@ -121,10 +121,27 @@ function loadDelayed() {
   // load anything that can be postponed to the latest here
 }
 
+
+// Show the card-content div on mouseover
+
+
+
 async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  window.addEventListener('load', function() {
+    document.querySelector('.card-content').style.display = 'none';
+  });
+  document.querySelectorAll('.two-items').forEach(function(card) {
+    card.addEventListener('mouseover', function() {
+      this.querySelector('.card-content').style.display = 'block';
+      this.querySelector('.card-content').style.animation = 'card-content-slide-up 0.5s ease-in-out forwards';
+    });
+    card.addEventListener('mouseout', function() {
+      this.querySelector('.card-content').style.display = 'none';
+    });
+  });
 }
 
 loadPage();

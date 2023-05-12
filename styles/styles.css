@@ -241,3 +241,14 @@ main .section {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+
+
+@keyframes card-content-slide-up {
+  from {
+    transform: translate(0, -100%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+

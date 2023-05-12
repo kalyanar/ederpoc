@@ -7,16 +7,7 @@ function decodeHtml(html) {
     txt.innerHTML = html;
     return txt.value;
 }
-window.addEventListener('unload', function() {
-  document.querySelector('.card-content').style.display = 'none';
-});
 
-// Show the card-content div on mouseover
-document.querySelectorAll('.card').forEach(function(card) {
-  card.addEventListener('mouseover', function() {
-    this.querySelector('.card-content').style.display = 'block';
-  });
-});
 var decodeHtmlEntity = function(str) {
   return str.replace(/&#(\d+);/g, function(match, dec) {
     return String.fromCharCode(dec);
